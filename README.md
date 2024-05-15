@@ -1,6 +1,10 @@
 # Audio Source Separation as applied to Vocals-Accompaniment Separation Strike
-This repository contains the code for separating vocals and accompaniment from music.<br>  
+This repository contains the code for our [publication](https://www.sciencedirect.com/science/article/pii/S2772671123001493). <br>
 For testing the model using gated recurrent units, I've provided a streamlit app. <br>
 Webapp - https://v12020-vocario.hf.space <br>
-Results for the evaluation over the MIR-1K dataset are available in the database2 directory.  
-Please find the accompanying manuscript [here](https://drive.google.com/file/d/13q4RnhKTpiFUdbTQquQkzgbeoJw46MGq/preview).
+Results for the evaluation over the MIR-1K dataset are available in the database2 directory. 
+
+# Abstract
+This paper presents two systems for extracting the vocals from a musical piece. Vocals extraction finds extensive application in automated lyrics transcription, music information retrieval systems and professional music remixing. However, the current research is dominated by training-intensive models and has not exploited several promising architectures for appreciably accurate yet computationally inexpensive inference. Neural networks can be leveraged to understand the underlying mathematical patterns of human speech and its harmonic overtones as distinguished from those of instruments. A first principles approach behind two distinct model architectures as well as the data processing steps has been described. Semantic segmentation techniques are used to discriminate between the magnitude spectrogram of the vocals and the mixture which is then applied to the first CNN-based model. The second architecture uses gated recurrent units to leverage the unique temporal dependencies of human speech. This model directly performs inference on the entire spectrogram to concurrently learn the frequency distribution of both the vocals as well as the accompaniment. The second architecture is shown to be an improvement upon the first model and intermittently approaches state-of-the-art predictions on the MIR-1K dataset. The novel GRU-based system in particular highlights the feasibility of rapid inference with smaller datasets. These features play a significant role towards source separation research oriented towards the deployment of real-time inference systems.
+
+
